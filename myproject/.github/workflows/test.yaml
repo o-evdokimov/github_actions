@@ -1,0 +1,9 @@
+on:
+  push:
+    branches:
+      # Push events on main branch
+      - master
+
+jobs:
+  unit-tests:
+    runs-on: ubuntu-latest
