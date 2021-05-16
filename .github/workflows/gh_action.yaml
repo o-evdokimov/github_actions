@@ -31,7 +31,7 @@ jobs:
           flake8 . --count --exit-zero --max-complexity=10 --max-line-length=127 --statistics
       - name: Install dependencies
         run: |
-          poetry export -f requirements.txt --dev --without-hashes | pip install --no-cache-dir -r /dev/stdin
+          pip install --no-cache-dir -r requirements.txt
       - name: Run tests
         run: python ..myproject/manage.py test
 
