@@ -33,7 +33,7 @@ jobs:
         run: |
           poetry export -f requirements.txt --dev --without-hashes | pip install --no-cache-dir -r /dev/stdin
       - name: Run tests
-        run: python manage.py test
+        run: python ..myproject/manage.py test
 
 
         
