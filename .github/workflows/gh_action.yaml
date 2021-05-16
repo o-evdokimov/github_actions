@@ -33,7 +33,7 @@ jobs:
         run: |
           pip install --upgrade pip
           pip install poetry
-          poetry install
+          poetry export -f requirements.txt --dev --without-hashes
       - name: Run tests
         run: python manage.py test
 
