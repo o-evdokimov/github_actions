@@ -34,7 +34,7 @@ jobs:
           pip install --upgrade pip
           pip install poetry
           poetry install
-      - name: Run pytest
-        run: pytest -s -vv
+      - name: Run tests
+        run: python manage.py test
 
         
